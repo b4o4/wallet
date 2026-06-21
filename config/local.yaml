@@ -1,0 +1,15 @@
+env: "local"
+db:
+  host: "127.0.0.1"
+  port: 5432
+  name: "notification"
+  user: "root"
+  password: "root"
+  ssl_mode: "disable"
+http_server:
+  address: "0.0.0.0:8080"
+  timeout: 4s
+  iddle_timeout: 60s
+auth:
+  jwt:
+    secret: "secret"
